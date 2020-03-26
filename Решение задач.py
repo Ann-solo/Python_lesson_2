@@ -11,14 +11,15 @@
 Задача 2
 Пользователь в цикле вводит 10 цифр. Найти количество введеных пользователем цифр 5.
 '''
-# m = int(input("Введите 10 цифр "))
-# d = 5
+# number = int(input("Введите цифру "))
+# digits_number = 5
 # count = 0
-# while m > 0:
-#     if m % 10 == d:
-#         count += 1
-#     m = m // 10
-# print("Было введено %d цифр %d" % (count, d))
+# for i in range(10):
+#     number = int(input("Введите цифру "))
+#     if number == 5:
+#         count+=1
+# print(count)
+
 '''
 Задача 3
 Найти сумму ряда чисел от 1 до 100. Полученный результат вывести на экран.
@@ -85,18 +86,23 @@
 Задача 9
 Найти максимальную цифру в числе
 '''
-# x = input('Введите число: ')
-# print(max(x))
+# number = 142554987
+# max_digit = 0
+# while number > 0:
+#     if number % 10 > max_digit:
+#         max_digit = number % 10
+#     number = number // 10
+# print(max_digit)
 
 '''
 Задача 10
 Найти количество цифр 5 в числе
 '''
-m = 145896582
-d = 5
-count = 0
-while m > 0:
-    if m % 10 == d:
-        count += 1
-    m = m // 10
-print("Было введено %d цифр %d" % (count, d))
+# m = 142554987
+# d = 5
+# count = 0
+# while m > 0:
+#     if m % 10 == d:
+#         count += 1
+#     m = m // 10
+# print("Было введено %d цифр %d" % (count, d))

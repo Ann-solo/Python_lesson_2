@@ -34,12 +34,11 @@
 (2*2)
 и .тп
 '''
-n = input('Введите число:')
-m = input('Введите число:')
-n=int(n)
-m=int(m)
-mult=n*m
-print(mult)
+n = int(input('Введите число:'))
+m = int(input('Введите число:'))
+for i in range (1,n+1):
+    for j in range(1,m+1):
+        print(i,'*',j,'=',i*j)
 
 '''
 Задача 4
@@ -59,7 +58,6 @@ print(mult)
 # my_list = [40, 32, 45, 22, 69, 3, 59, 150, 34, 0, 2, 5, 1, 38, 65, 39, 94]
 # max_elment=0
 # for el in my_list:
-#     if el/1>max_elment:
-#         max_elment = el/1
-#     el=el/1
-# print("Максимальный элемент в списке: ", int(max_elment))
+#     if el>max_elment:
+#         max_elment = el
+# print("Максимальный элемент в списке: ", max_elment)

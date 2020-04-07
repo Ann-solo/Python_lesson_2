@@ -106,3 +106,12 @@
 #         count += 1
 #     m = m // 10
 # print("Было введено %d цифр %d" % (count, d))
+
+# number = input("Введите целое число:")
+# # max_digit = 0
+# # while number > 0:
+# #     if number % 10 > max_digit:
+# #         max_digit = number % 10
+# #     number = number // 10
+# # print(max_digit)
+

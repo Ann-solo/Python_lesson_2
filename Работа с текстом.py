@@ -60,18 +60,28 @@ str1 = str1.replace('(', '')
 str1 = str1.replace(':', '')
 print(str1)
 
+# Формирование list со словами
 List=str1.split()
 print(List)
-# list1=list(map(lambda x: x.lower(), List))
+
+#Привести всех слов в листе к нижнему регистру
 list1=list(map(str.lower, List))
 print(list1)
 
-
+# Получить словарь
 dict_temp={}
 for i in range(len(list1)):
        dict_temp[list1[i]] =list1.count(list1[i])
 print(dict_temp)
 
+# 5 наиболее встречающихся слов
 dict_temp1 = Counter(dict_temp).most_common(5)
 print(dict_temp1)
+
+
+#Вывести количество разных слов в тексте
+count=0
+for keys in dict_temp:
+       count+=1
+print(count)
 

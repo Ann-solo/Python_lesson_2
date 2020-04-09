@@ -74,9 +74,10 @@ for i in range(len(list1)):
        dict_temp[list1[i]] =list1.count(list1[i])
 print(dict_temp)
 
-# 5 наиболее встречающихся слов
-dict_temp1 = Counter(dict_temp).most_common(5)
-print(dict_temp1)
+Count_list=(list(dict_temp.items()))
+Count_list.sort(key=lambda x:x[1],reverse=True)
+top_five=Count_list[0:5]
+print(top_five)
 
 
 #Вывести количество разных слов в тексте
